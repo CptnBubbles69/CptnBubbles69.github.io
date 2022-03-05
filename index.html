@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-  </head>
-  <body>
-    <h1>Assignment 2a</h1>
-      <p>This is my page. It's literally the best website that has <strong>EVER</strong> existed. I find <a href="https://en.wikipedia.org/wiki/Cryptography" title="Cryptography Wikipedia Page" target="_blank">Cryptography</a> to be a very interesting topic.</p>
-      <a href="http://media.boingboing.net/wp-content/uploads/2016/02/crypto.jpg">
-        <image title="Another Cryptography Meme" src="https://i.redd.it/hg65ypy2g6711.jpg" >
-      </a> 
+	<head>
+		<title>Fancify Shamcify</title>
+		<script src="fancifymytext.js" defer></script>
+		
+		
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		
+		<form action="/fancifymytext.js">
+			<fieldset>
+				<legend>Text</legend>
+				<textarea type="text" id="textBox" rows="4" columns="30"></textarea>
+			</fieldset>
+			<fieldset id="uicontrols">
+				<legend>Fancify</legend>
+				<button type="button" id="bigbutton" onclick="biggerText()">BIGGER!!</button>
+				<input type="radio" id="fancyshmancy" onchange="fancy()">
+				<label for="fancyshmancy">FancyShmancy</label>
+				<input type="radio" id="boringbetty" onchange="boring()">
+				<label for="boringbetty">BoringBetty</label>
+				<button type="button" id="moobutton" onclick="moo()">MOO</button>
+			</fieldset>
+			
+		</form>
+		
+	</body>
 </html>
